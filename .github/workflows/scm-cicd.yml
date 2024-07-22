@@ -20,6 +20,8 @@ jobs:
 
       - name: Install dependencies
         run: yarn install
+        working-directory: "./api"
 
       - name: Build to production
         run: yarn build
+        working-directory: "./api"
